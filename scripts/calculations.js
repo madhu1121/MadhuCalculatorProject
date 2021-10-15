@@ -1,3 +1,5 @@
+let element = document.getElementById('inputField');
+
 const addition = (total,num) => {
     return total+num;
 }
@@ -15,8 +17,7 @@ const division = (total,num) => {
 }
 
 const clearInput = () => {
-    let element = document.getElementById('inputField');
-    element.innerHTML = null;
+    element.value = null;
 }
 
 

@@ -17,22 +17,22 @@
             <button class="button" onclick="clearInput()">C</button>
             <button class="button">+/-</button>
             <button class="button">%</button>
-            <button class="button">/</button>
-            <button class="button" id="seven" value="7" onclick="getInputFromBtn('')">7</button>
-            <button class="button" value="8">8</button>
-            <button class="button" value="9">9</button>
-            <button class="button" id="asterisk" value="*" onclick="getInputFromSpl('')">*</button>
-            <button class="button">4</button>
-            <button class="button">5</button>
-            <button class="button">6</button>
-            <button class="button">-</button>
-            <button class="button">1</button>
-            <button class="button">2</button>
-            <button class="button">3</button>
-            <button class="button">+</button>
-            <button class="button">0</button>
-            <button class="button">.</button>
-            <button class="button">=</button>
+            <button class="button" value="*" onclick="getInputFromSpl('/')">/</button>
+            <button class="button" value="7" onclick="getInputFromBtn('7')">7</button>
+            <button class="button" value="8" onclick="getInputFromBtn('8')">8</button>
+            <button class="button" value="9" onclick="getInputFromBtn('9')">9</button>
+            <button class="button" value="*" onclick="getInputFromSpl('*')">*</button>
+            <button class="button" value="4" onclick="getInputFromBtn('4')">4</button>
+            <button class="button" value="5" onclick="getInputFromBtn('5')">5</button>
+            <button class="button" value="6" onclick="getInputFromBtn('6')">6</button>
+            <button class="button" value="*" onclick="getInputFromSpl('-')">-</button>
+            <button class="button" value="1" onclick="getInputFromBtn('1')">1</button>
+            <button class="button" value="2" onclick="getInputFromBtn('2')">2</button>
+            <button class="button" value="3" onclick="getInputFromBtn('3')">3</button>
+            <button class="button" value="*" onclick="getInputFromSpl('+')">+</button>
+            <button class="button" value="0" onclick="getInputFromBtn('0')">0</button>
+            <button class="button" >.</button>
+            <button class="button" onclick="evaluateExpression()">=</button>
         </div>
     </section>
 

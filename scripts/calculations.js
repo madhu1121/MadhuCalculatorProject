@@ -26,32 +26,36 @@ const clearInput = () => {
 //     console.log(numberButton.value);
 // });
 
-const getInputFromBtn = (totalExp) => {
-    totalExp = inputElement.value;
+const getInputFromBtn = (btnValue) => {
+    let totalExp = inputElement.value;
     console.log(totalExp);
-    let num = document.getElementById('seven').value.toString(); 
-    console.log(num);
-    totalExp = totalExp.concat(num);
+    console.log(btnValue);
+    totalExp = totalExp.concat(btnValue);
     console.log(totalExp);
     inputElement.value = totalExp;
     console.log("a button is pressed");
 }
 
-const getInputFromSpl = (totalExp) => {
-    totalExp = inputElement.value;
+const getInputFromSpl = (btnValue) => {
+    let totalExp = inputElement.value;
     console.log(totalExp);
-    if (totalExp.charAt(totalExp.length-1) == '*') {
+    if (totalExp.charAt(totalExp.length-1) == btnValue || totalExp == "") {
         console.log("a button is pressed and done nothing")
     }
     else {
-        let symbol = document.getElementById('asterisk').value.toString(); 
-        console.log(symbol);
-        totalExp = totalExp.concat(symbol);
+        console.log(btnValue);
+        totalExp = totalExp.concat(btnValue);
         console.log(totalExp);
         inputElement.value = totalExp;
         console.log("a button is pressed");
     }
 
+}
+
+const evaluateExpression = () => {
+    const exp = inputElement.value;
+    console.log("here is the exp to be evaluated : " , exp);
+    return exp;
 }
 
 

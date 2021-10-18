@@ -66,7 +66,7 @@ const evaluateExpression = () => {
             let arrAfterStar = arr.split('*');
             console.log("arrAfterStar :" + arrAfterStar);
             let arr3 = arrAfterStar.map((finalExp) => {
-                var numArr = finalExp.match(/\d/g);
+                var numArr = finalExp.match(/[+-]?([0-9]*[.])?[0-9]+/g);
                 console.log("numbers for division : ", numArr);
 
                 let divisions = parseFloat(numArr[0]);
@@ -92,7 +92,6 @@ const evaluateExpression = () => {
 
     let total = arr.reduce((a,b) => a - b);
     inputElement.value = total;
-
 
 }
 

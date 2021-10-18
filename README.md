@@ -8,3 +8,8 @@ using git, GitHub and the command line.
 3. Apply what you are learning: This is a great place to apply what you have been learning 
 on all of the course so far. When you get it functioning really push on the UI, use SCSS, 
 BEM, anything else you find on the web....really go mad
+
+
+1. Calculator Takes DMAS Rule
+2. enter all the operands and operators, the final expression is calculated by hitting the "=" symbol
+3. For calculation reduce and map functions are used

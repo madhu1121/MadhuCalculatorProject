@@ -11,28 +11,28 @@
 
 <body>
     <section class="section">
-        <textarea name="inputField" id="inputField" cols="50" rows="3"></textarea>
+        <textarea name="inputField" id="inputField" cols="30" rows="3"></textarea>
         <!-- <input type="number" placeholder="number" name="inputField" id="inputField"> -->
         <div class="allButtons">
-            <button class="button" onclick="clearInput()">C</button>
-            <button class="button">+/-</button>
-            <button class="button">%</button>
-            <button class="button" value="/" onclick="getInputFromSpl('/')">/</button>
-            <button class="button" value="7" onclick="getInputFromBtn('7')">7</button>
-            <button class="button" value="8" onclick="getInputFromBtn('8')">8</button>
-            <button class="button" value="9" onclick="getInputFromBtn('9')">9</button>
-            <button class="button" value="*" onclick="getInputFromSpl('*')">*</button>
-            <button class="button" value="4" onclick="getInputFromBtn('4')">4</button>
-            <button class="button" value="5" onclick="getInputFromBtn('5')">5</button>
-            <button class="button" value="6" onclick="getInputFromBtn('6')">6</button>
-            <button class="button" value="-" onclick="getInputFromSpl('-')">-</button>
-            <button class="button" value="1" onclick="getInputFromBtn('1')">1</button>
-            <button class="button" value="2" onclick="getInputFromBtn('2')">2</button>
-            <button class="button" value="3" onclick="getInputFromBtn('3')">3</button>
-            <button class="button" value="+" onclick="getInputFromSpl('+')">+</button>
-            <button class="button" value="0" onclick="getInputFromBtn('0')">0</button>
-            <button class="button" value="." onclick="getInputFromSpl('.')">.</button>
-            <button class="button" onclick="evaluateExpression()">=</button>
+            <button class="button button--special" id="clearButton" onclick="clearInput()">C</button>
+            <button class="button button--special" id="negativeButton">+/-</button>
+            <button class="button button--special" id="percentageButton">%</button>
+            <button class="button button--operator" id="divisionButton" value="/" onclick="getInputFromSpl('/')">/</button>
+            <button class="button button--number" id="sevenButton" value="7" onclick="getInputFromBtn('7')">7</button>
+            <button class="button button--number" id="eightButton" value="8" onclick="getInputFromBtn('8')">8</button>
+            <button class="button button--number" id="nineButton" value="9" onclick="getInputFromBtn('9')">9</button>
+            <button class="button button--operator" id="multiplicationButton" value="*" onclick="getInputFromSpl('*')">*</button>
+            <button class="button button--number" id="fourButton" value="4" onclick="getInputFromBtn('4')">4</button>
+            <button class="button button--number" id="fiveButton" value="5" onclick="getInputFromBtn('5')">5</button>
+            <button class="button button--number" id="sixButton" value="6" onclick="getInputFromBtn('6')">6</button>
+            <button class="button button--operator" id="minusButton"  value="-" onclick="getInputFromSpl('-')">-</button>
+            <button class="button button--number" id="oneButton" value="1" onclick="getInputFromBtn('1')">1</button>
+            <button class="button button--number" id="twoButton" value="2" onclick="getInputFromBtn('2')">2</button>
+            <button class="button button--number" id="threeButton" value="3" onclick="getInputFromBtn('3')">3</button>
+            <button class="button button--operator" id="plusButton" value="+" onclick="getInputFromSpl('+')">+</button>
+            <button class="button button--number" id="zeroButton" value="0" onclick="getInputFromBtn('0')">0</button>
+            <button class="button button--number" id="decimalButton" value="." onclick="getInputFromSpl('.')">.</button>
+            <button class="button button--operator" id="evaluateButton" onclick="evaluateExpression()">=</button>
         </div>
     </section>
 

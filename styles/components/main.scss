@@ -1,22 +1,102 @@
 
 .section{
     margin: 50px;
-    height: 100px;
-    width: 200px;
-    
+    height: 500px;
+    width: 300px;
+    background-color: black;
 
     #inputField{
-        margin: 0;
+        margin: 10px;
         padding: 0;
         font-size: larger;
         font-weight: bold;
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+        text-align: right;
+        margin-top: 50px;
     }
 
     .allButtons{
+        
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-around;
-        margin-left: 175px;
+        margin: 10px;
+        // grid-template-areas: 
+        // "clear negative percentage division"
+        // "seven eight nine multi"
+        // "four five six minus"
+        // "one two three plus"
+        // "zero1 zero1 decimal1 evaluate"
+        // ;
+
+        // #clearButton{
+        //     grid-area: clear;
+        // }
+
+        // #negativeButton{
+        //     grid-area: negative;
+        // }
+        // #percentageButton{
+        //     grid-area: percentage;
+        // }
+        // #divisionButton{
+        //     grid-area: division;
+        // }
+        // #sevenButton{
+        //     grid-area: seven;
+        // }
+        // #eightButton{
+        //     grid-area: eight;
+        // }
+        // #nineButton{
+        //     grid-area: nine;
+        // }
+        // #multiplicationButton{
+        //     grid-area: multi;
+        // }
+        // #fourButton{
+        //     grid-area: four;
+        // }
+        // #fiveButton{
+        //     grid-area: five;
+        // }
+        // #sixButton{
+        //     grid-area: six;
+        // }
+        // #minusButton{
+        //     grid-area: minus;
+        // }
+        // #oneButton{
+        //     grid-area: one;
+        // }
+        // #twoButton{
+        //     grid-area: two;
+        // }
+        // #threeButton{
+        //     grid-area: three;
+        // }
+        // #plusButton{
+        //     grid-area: plus;
+        // }
+        #zeroButton{
+            grid-area: zero1;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 5;
+            height: 50px;
+            width: 120px;
+            border-radius: 30px;
+        }
+        // #decimalButton{
+        //     grid-area: decimal1;
+        // }
+        // #evaluateButton{
+        //     grid-area: evaluate;
+        // }
+        
     }
 
 }

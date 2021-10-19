@@ -13,3 +13,5 @@ BEM, anything else you find on the web....really go mad
 1. Calculator Takes DMAS Rule
 2. enter all the operands and operators, the final expression is calculated by hitting the "=" symbol
 3. For calculation reduce and map functions are used
+
+![Alt text](20211018_152210.jpeg?raw=true "Title")

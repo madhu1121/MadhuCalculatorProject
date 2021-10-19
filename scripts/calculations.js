@@ -70,7 +70,7 @@ const getInputFromSplDot = (btnValue) => {
 }
 
 const getInputFromBtnNegative = (btnValue) => {
-
+    
 }
 
 const evaluateExpression = () => {

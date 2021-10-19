@@ -1,0 +1,23 @@
+{
+  "name": "MadhuCalculatorProject",
+  "version": "1.0.0",
+  "description": "We’re aiming for the following goals for this project:\r 1. A working Calculator: The main task is to create a Calculator not only will this test your \r understanding of JavaScript but how you break down a problem. \r 2. Practice using Git and GitHub flow: We want you to get as much practice as possible \r using git, GitHub and the command line.\r 3. Apply what you are learning: This is a great place to apply what you have been learning \r on all of the course so far. When you get it functioning really push on the UI, use SCSS, \r BEM, anything else you find on the web....really go mad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhu1121/MadhuCalculatorProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhu1121/MadhuCalculatorProject/issues"
+  },
+  "homepage": "https://github.com/madhu1121/MadhuCalculatorProject#readme",
+  "devDependencies": {
+    "cypress": "^8.6.0"
+  }
+}

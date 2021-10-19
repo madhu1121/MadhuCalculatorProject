@@ -1,5 +1,6 @@
 const inputElement = document.getElementById('inputField');
 const buttons = document.querySelectorAll('.button');
+const operators = ['*','+','-','/','.'];
 
 const clearInput = () => {
     inputElement.value = null;
@@ -28,7 +29,7 @@ const getInputFromBtn = (btnValue) => {
 const getInputFromSpl = (btnValue) => {
     let totalExp = inputElement.value;
     console.log(totalExp);
-    if (totalExp.charAt(totalExp.length - 1) == btnValue || totalExp == "") {
+    if (totalExp.charAt(totalExp.length - 1) == btnValue || totalExp == "" || operators.includes(totalExp.charAt(totalExp.length - 1))) {
         console.log("a button is pressed and done nothing")
     }
     else {
@@ -38,6 +39,37 @@ const getInputFromSpl = (btnValue) => {
         inputElement.value = totalExp;
         console.log("a button is pressed");
     }
+
+}
+
+const getInputFromSplDot = (btnValue) => {
+    let totalExp = inputElement.value;
+    console.log(totalExp);
+    let index = 0;
+
+    for (let i = totalExp.length-1; i >= 0; i--) {
+        console.log("character is :", totalExp.charAt(i) , i);
+        if (signs.includes(totalExp.charAt(i))) {
+            index=i;
+            break;
+        }
+    }
+    let substr = totalExp.substring(index,totalExp.length-1);
+    console.log("substr :" , substr);
+    if (totalExp.charAt(totalExp.length - 1) == btnValue || substr.includes('.')) {
+        console.log("a button is pressed and done nothing")
+    }
+    else {
+        console.log(btnValue);
+        totalExp = totalExp.concat(btnValue);
+        console.log(totalExp);
+        inputElement.value = totalExp;
+        console.log("a button is pressed");
+    }
+
+}
+
+const getInputFromBtnNegative = (btnValue) => {
 
 }
 

@@ -15,7 +15,7 @@
         <!-- <input type="number" placeholder="number" name="inputField" id="inputField"> -->
         <div class="allButtons">
             <button class="button button--special" id="clearButton" onclick="clearInput()">C</button>
-            <button class="button button--special" id="negativeButton">+/-</button>
+            <button class="button button--special" id="negativeButton" onclick="getInputFromBtnNegative('-')">+/-</button>
             <button class="button button--special" id="percentageButton">%</button>
             <button class="button button--operator" id="divisionButton" value="/" onclick="getInputFromSpl('/')">/</button>
             <button class="button button--number" id="sevenButton" value="7" onclick="getInputFromBtn('7')">7</button>
@@ -31,7 +31,7 @@
             <button class="button button--number" id="threeButton" value="3" onclick="getInputFromBtn('3')">3</button>
             <button class="button button--operator" id="plusButton" value="+" onclick="getInputFromSpl('+')">+</button>
             <button class="button button--number" id="zeroButton" value="0" onclick="getInputFromBtn('0')">0</button>
-            <button class="button button--number" id="decimalButton" value="." onclick="getInputFromSpl('.')">.</button>
+            <button class="button button--number" id="decimalButton" value="." onclick="getInputFromSplDot('.')">.</button>
             <button class="button button--operator" id="evaluateButton" onclick="evaluateExpression()">=</button>
         </div>
     </section>

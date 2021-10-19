@@ -46,7 +46,7 @@ const getInputFromSplDot = (btnValue) => {
     let totalExp = inputElement.value;
     console.log(totalExp);
     let index = 0;
-
+    let signs = ['+','-','*','/'];
     for (let i = totalExp.length-1; i >= 0; i--) {
         console.log("character is :", totalExp.charAt(i) , i);
         if (signs.includes(totalExp.charAt(i))) {

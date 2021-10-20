@@ -6,7 +6,6 @@
   padding: 10px;
   background-color: #413e3e;
   color: white;
-  font-weight: bolder;
   font-size: x-large;
   border: 1px solid black;
   text-align: center;
@@ -15,7 +14,8 @@
   background-color: orange;
 }
 .button--special {
-  background-color: gray;
+  background-color: #b4afaf;
+  color: black;
 }
 
 .section {

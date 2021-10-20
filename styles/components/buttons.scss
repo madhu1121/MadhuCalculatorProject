@@ -6,7 +6,6 @@
     padding: 10px;
     background-color:rgb(65, 62, 62);
     color: white;
-    font-weight: bolder;
     font-size: x-large;
     border: 1px solid black;
     text-align: center;
@@ -16,7 +15,8 @@
     }
 
     &--special{
-        background-color: gray;
+        background-color: rgb(180, 175, 175);
+        color: black;
     }
 
 }

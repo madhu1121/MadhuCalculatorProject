@@ -14,7 +14,7 @@
         <textarea name="inputField" id="inputField" readonly></textarea>
         <!-- <input type="number" placeholder="number" name="inputField" id="inputField"> -->
         <div class="allButtons">
-            <button class="button button--special" id="clearButton" onclick="clearInput()">C</button>
+            <button class="button button--special" id="clearButton" data-cy="clear" onclick="clearInput()">C</button>
             <button class="button button--special" id="negativeButton" onclick="getInputFromBtnNegative('-')">+/-</button>
             <button class="button button--special" id="percentageButton">%</button>
             <button class="button button--operator" id="divisionButton" value="/" onclick="getInputFromSpl('/')">/</button>
